@@ -9,6 +9,7 @@ namespace UrlShortner.Data
     {
         public virtual DbSet<Url> Urls { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<About> Description { get; set; }
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         { }

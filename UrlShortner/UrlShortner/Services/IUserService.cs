@@ -11,5 +11,6 @@ namespace UrlShortner.Services
     {
         public Task<ServiceResponse<User>> RegisterUser(RegisterDto user);
         public Task<ServiceResponse<TokenDto>> GetAuthToken(LoginDto login);
+        public Task<ServiceResponse<User>> GetUserFromToken(TokenDto token);
     }
 }

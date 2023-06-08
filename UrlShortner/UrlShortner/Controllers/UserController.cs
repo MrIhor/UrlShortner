@@ -40,5 +40,11 @@ namespace UrlShortner.Controllers
 
             return Ok(token);
         }
+
+        [HttpGet("GetUserFromToken")]
+        public async Task<IActionResult> GetUserFromToken(TokenDto token)
+        {
+            return Ok(await _userService.GetUserFromToken(token));
+        }
     }
 }

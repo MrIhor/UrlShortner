@@ -112,5 +112,31 @@ namespace UrlShortner.Services
 
             return serviceResponse;
         }
+
+        public Task<ServiceResponse<User>> GetUserFromToken(TokenDto token)
+        {
+            var serviceResponse = new ServiceResponse<User>();
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var jwtSecurityToken = tokenHandler.ReadToken(token.AccessToken) as JwtSecurityToken;
+
+            if (jwtSecurityToken != null)
+            {
+                var usernameClaim = jwtSecurityToken.Claims;
+
+                if (usernameClaim != null)
+                {
+                    var user = new User()
+                    {
+                        Username = usernameClaim.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value,
+                        Email = usernameClaim.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value,
+                        Role = usernameClaim.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value
+                    };
+
+                    serviceResponse.Data = user;
+                }
+            }
+
+            return Task.FromResult(serviceResponse);
+        }
     }
 }

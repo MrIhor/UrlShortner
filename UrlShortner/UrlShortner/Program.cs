@@ -56,6 +56,7 @@ var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(connStr));
 builder.Services.AddScoped<IUrlService, UrlService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAboutService, AboutService>();
 
 builder.Services.AddCors();
 
