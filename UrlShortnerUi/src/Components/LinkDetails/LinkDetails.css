@@ -1,0 +1,26 @@
+.LinkDetailsContainer {
+    padding: 20px;
+}
+
+.HeaderDetails {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.LinkDetailsContainer ul {
+    list-style: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.LinkDetailsContainer ul li {
+    padding: 15px 0;
+}
+
+.LinkDetailsContainer ul li span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 12px;
+}

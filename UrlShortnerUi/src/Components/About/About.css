@@ -1,0 +1,41 @@
+.AboutContainer {
+    text-align: center;
+}
+
+.AboutContainer p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.DescriptionForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.DescriptionInput {
+    padding: 10px;
+    margin-right: 40px;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+.DescriptionSubmit {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.DescriptionSubmit:hover {
+    background-color: #757575;
+    border-radius: 5px;
+}

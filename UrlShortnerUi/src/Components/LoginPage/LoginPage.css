@@ -1,0 +1,78 @@
+.LoginContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.Arrow {
+    margin: 20px;
+}
+
+.Arrow i {
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.Arrow i:hover {
+    background-color: #757575;
+}
+
+.LoginForm h2 {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.LoginForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.LoginForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+.LoginForm input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+.LoginForm button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.LoginForm button:hover {
+    background-color: #757575;
+}
+
+.AuthorizeButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

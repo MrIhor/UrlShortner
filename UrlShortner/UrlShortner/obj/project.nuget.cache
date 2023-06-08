@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6W+kr7uKYec5aB+9RRGnFffxIDzerXD/cdWrdSsInsO/LUpzpJpnVqs88GD7Ogu2Q8pDeJdS2f4gtBwoLubIyw==",
+  "dgSpecHash": "NAL4qjgp3mJcGpQ2Ypd1T+D2jNeAeQNOay54chIZJhGPHk7kyCbh1L64reqeUNkE4tWm9ny54iS0KJBzG372ww==",
   "success": true,
-  "projectFilePath": "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/UrlShortner.csproj",
+  "projectFilePath": "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/UrlShortner.csproj",
   "expectedPackageFiles": [
     "/Users/ihormolchan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/ihormolchan/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.5/microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",

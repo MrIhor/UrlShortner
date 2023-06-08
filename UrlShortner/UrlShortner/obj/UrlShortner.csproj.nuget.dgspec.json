@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/UrlShortner.csproj": {}
+    "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/UrlShortner.csproj": {}
   },
   "projects": {
-    "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/UrlShortner.csproj": {
+    "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/UrlShortner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/UrlShortner.csproj",
+        "projectUniqueName": "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/UrlShortner.csproj",
         "projectName": "UrlShortner",
-        "projectPath": "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/UrlShortner.csproj",
+        "projectPath": "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/UrlShortner.csproj",
         "packagesPath": "/Users/ihormolchan/.nuget/packages/",
-        "outputPath": "/Users/ihormolchan/Desktop/UrlSortnerProject/UrlShortner/UrlShortner/obj/",
+        "outputPath": "/Users/ihormolchan/Desktop/UrlSortner/UrlShortner/UrlShortner/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ihormolchan/.nuget/NuGet/NuGet.Config"

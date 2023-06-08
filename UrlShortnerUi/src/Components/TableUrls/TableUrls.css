@@ -1,0 +1,49 @@
+.TableView {
+    width: 100%;
+}
+
+.TableView table {
+    max-width: 70%;
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+.TableView table tbody {
+    margin-top: 10px;
+}
+
+.TableView table tbody td {
+    padding: 15px;
+}
+
+.TableView table tbody td .Details {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #34cceb;
+    cursor: pointer;
+}
+
+.TableView table tbody td button[name='delete'] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #c44b4b;
+    cursor: pointer;
+}
+
+.TableView table tbody tr td:first-child {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 500px;
+    margin-right: 200px;
+    padding: 20px 0 10px 0;
+}

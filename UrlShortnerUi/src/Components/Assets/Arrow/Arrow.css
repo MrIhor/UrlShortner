@@ -1,0 +1,16 @@
+.Arrow {
+    margin: 20px;
+}
+
+.Arrow i {
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.Arrow i:hover {
+    background-color: #757575;
+}
