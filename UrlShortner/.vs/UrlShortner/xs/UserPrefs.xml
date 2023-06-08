@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{67DDCC78-BBA8-4172-93B7-42F938F0570E}|https">
+  <MonoDevelop.Ide.ItemProperties.UrlShortner PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UrlShortner/Controllers/UrlController.cs">
+    <Files>
+      <File FileName="UrlShortner/Models/Url.cs" Line="9" Column="36" />
+      <File FileName="UrlShortner/Dtos/UrlDto.cs" Line="2" Column="1" />
+      <File FileName="UrlShortner/Data/DataContext.cs" Line="3" Column="37" />
+      <File FileName="UrlShortner/appsettings.json" Line="11" Column="6" />
+      <File FileName="UrlShortner/Program.cs" Line="14" Column="68" />
+      <File FileName="UrlShortner/Services/IUrlService.cs" Line="17" Column="1" />
+      <File FileName="UrlShortner/Services/UrlService.cs" Line="4" Column="18" />
+      <File FileName="UrlShortner/Controllers/RedirectController.cs" Line="4" Column="15" />
+      <File FileName="UrlShortner/Controllers/UrlController.cs" Line="5" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="UrlShortner" expanded="True">
+            <Node name="UrlShortner" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UrlController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Dtos" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
