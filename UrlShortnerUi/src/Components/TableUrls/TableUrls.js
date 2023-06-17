@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './TableUrls.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function TableUrls({ linksData, onDeleteUrl }) {
-    const token = localStorage.getItem('token');
+    const { token } = useContext(JwtTokenContext);
+
     const deleteUrl = async (id) => {
         try {
             await axios.delete(`http://localhost:5184/Url/${id}`, {

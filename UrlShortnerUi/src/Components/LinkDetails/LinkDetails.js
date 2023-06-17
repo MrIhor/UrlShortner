@@ -1,13 +1,14 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import './LinkDetails.css';
 import Arrow from '../Assets/Arrow/Arrow';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function LinkDetails() {
     const [url, setUrl] = useState({});
     const location = useLocation();
-    const token = localStorage.getItem('token');
+    const { token } = useContext(JwtTokenContext);
 
     useEffect(() => {
         const getUrl = async (id) => {

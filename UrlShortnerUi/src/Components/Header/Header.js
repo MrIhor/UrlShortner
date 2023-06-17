@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function Header() {
     const [isLogged, setIsLogged] = useState(false);
+    const { updateContextValue } = useContext(JwtTokenContext);
 
     useEffect(() => {
         checkLogged();
-    });
+    }, []);
 
     const checkLogged = () => {
         const token = localStorage.getItem('token');
@@ -18,6 +20,7 @@ export default function Header() {
 
     const logOut = () => {
         localStorage.removeItem('token');
+        updateContextValue(null);
         setIsLogged(false);
     };
 

@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import TableUrls from '../TableUrls/TableUrls';
 import axios from 'axios';
 import './HomePage.css';
 import Header from '../Header/Header';
 import { useNavigate } from 'react-router-dom';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function HomePage() {
     const [links, setLinks] = useState([]);
     const [formData, setFormData] = useState({ url: '' });
     const [showMessage, setshowMessage] = useState(false);
-    const token = localStorage.getItem('token');
+    const { token } = useContext(JwtTokenContext);
     const navigate = useNavigate();
 
     useEffect(() => {

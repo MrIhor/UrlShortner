@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './LoginPage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Arrow from '../Assets/Arrow/Arrow';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function LoginPage() {
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ export default function LoginPage() {
         username: '',
         password: '',
     });
+    const { updateContextValue } = useContext(JwtTokenContext);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -29,6 +31,7 @@ export default function LoginPage() {
                     username: '',
                     password: '',
                 });
+                updateContextValue(localStorage.getItem('token'));
                 navigate('/');
             }
         }

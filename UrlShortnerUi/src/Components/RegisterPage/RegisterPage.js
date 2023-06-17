@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './RegisterPage.css';
 import Arrow from '../Assets/Arrow/Arrow';
+import { JwtTokenContext } from '../../contexts/TokenContext';
 
 export default function RegisterPage() {
     const navigate = useNavigate();
@@ -11,6 +12,7 @@ export default function RegisterPage() {
         email: '',
         password: '',
     });
+    const { updateContextValue } = useContext(JwtTokenContext);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -27,7 +29,7 @@ export default function RegisterPage() {
             const tokenResponse = await axios.get(
                 `http://localhost:5184/GetToken?Username=${username}&Password=${password}`
             );
-            console.log(tokenResponse);
+
             if (!tokenResponse.data.data) {
                 return null;
             } else {
@@ -39,6 +41,7 @@ export default function RegisterPage() {
                     username: '',
                     password: '',
                 });
+                updateContextValue(localStorage.getItem('token'));
                 navigate('/');
             }
         }
